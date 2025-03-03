@@ -1,5 +1,6 @@
 import { useState } from "react";
 import { Link } from "react-router-dom";
+import { useEffect } from "react";
 
 export default function Navbar() {
   const [isOpen, setIsOpen] = useState(false);
@@ -7,8 +8,24 @@ export default function Navbar() {
   const toggleMenu = () => setIsOpen(!isOpen);
   const closeMenu = () => setIsOpen(false);
 
+  useEffect(() => {
+    const handleScroll = () => {
+      const navbar = document.querySelector("nav");
+      if (window.scrollY > 50) {
+        navbar.classList.add("bg-gray-900");
+      } else {
+        navbar.classList.remove("bg-gray-900");
+      }
+    };
+
+    window.addEventListener("scroll", handleScroll);
+    return () => {
+      window.removeEventListener("scroll", handleScroll);
+    };
+  }, []);
+
   return (
-    <nav className="flex items-center justify-between py-2 px-4 text-white sticky top-0  bg-opacity-70 backdrop-blur-sm z-50">
+    <nav className="flex items-center justify-between py-2 px-4 text-white sticky top-0 bg-opacity-70 transition-colors duration-200">
       <div className="text-2xl font-bold">EJ</div>
 
       <button
@@ -48,14 +65,14 @@ export default function Navbar() {
           <Link
             to="/"
             onClick={closeMenu}
-            className="block px-4 py-2 text-lg text-gray-300 hover:text-xl font-bold"
+            className="block px-4 py-2 text-lg text-white hover:text-xl font-bold"
           >
             Home
           </Link>
           <Link
             to="/about"
             onClick={closeMenu}
-            className="block px-4 py-2 text-lg text-gray-300 hover:text-xl font-bold"
+            className="block px-4 py-2 text-lg text-white hover:text-xl font-bold"
           >
             About
           </Link>
@@ -63,7 +80,7 @@ export default function Navbar() {
           <Link
             to="/experience"
             onClick={closeMenu}
-            className="block px-4 py-2 text-lg text-gray-300 hover:text-xl font-bold"
+            className="block px-4 py-2 text-lg text-white hover:text-xl font-bold"
           >
             Experience
           </Link>
@@ -71,7 +88,7 @@ export default function Navbar() {
           <Link
             to="/projects"
             onClick={closeMenu}
-            className="block px-4 py-2 text-lg text-gray-300 hover:text-xl font-bold"
+            className="block px-4 py-2 text-lg text-white hover:text-xl font-bold"
           >
             Projects
           </Link>
@@ -79,7 +96,7 @@ export default function Navbar() {
           <Link
             to="/contact"
             onClick={closeMenu}
-            className="block px-4 py-2 text-lg text-gray-300 hover:text-xl font-bold"
+            className="block px-4 py-2 text-lg text-white hover:text-xl font-bold"
           >
             Contact
           </Link>

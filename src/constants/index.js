@@ -9,8 +9,8 @@ export const EXPERIENCES = [
     year: "2024 - 2025",
     role: "Frontend Developer",
     company: "TechBubble",
-    description: `Led a team in developing and maintaining web applications using JavaScript, React.js, and Node.js. Implemented RESTful APIs and integrated with MongoDB databases. Collaborated with stakeholders to define project requirements and timelines.`,
-    technologies: ["Javascript", "React.js", "Next.js", "mongoDB"],
+    description: `Developed user interfaces for web applications using React. Worked closely with backend developers to integrate frontend components with Node.js APIs. Implemented responsive designs and optimized frontend performance.`,
+    technologies: ["Javascript", "React.js", "TailwindCss"],
   },
   // {
   //   year: "2022 - 2023",
