@@ -28,9 +28,10 @@ export default function Navbar() {
     <nav className="flex items-center justify-between py-2 px-4 text-white sticky top-0 bg-opacity-70 transition-colors duration-200">
       <div className="text-2xl font-bold">EJ</div>
 
+      {/* Hamburger menu for small screens */}
       <button
         onClick={toggleMenu}
-        className="flex flex-col items-center justify-center w-10 h-10 hover:bg-slate-700 focus:outline-none"
+        className="lg:hidden flex flex-col items-center justify-center w-10 h-10 hover:bg-slate-700 focus:outline-none"
       >
         <span
           className={`h-1 w-8 bg-gray-300 rounded transform transition-transform duration-300 ${
@@ -49,6 +50,35 @@ export default function Navbar() {
         ></span>
       </button>
 
+      {/* Desktop navbar links (visible on large screens) */}
+      <div className="hidden lg:flex space-x-10">
+        <Link to="/" className="text-lg text-white hover:text-xl hover:font-bold hover:underline">
+          Home
+        </Link>
+        <Link to="/about" className="text-lg text-white hover:text-xl hover:font-bold hover:underline">
+          About
+        </Link>
+        <Link
+          to="/experience"
+          className="text-lg text-white hover:text-xl hover:font-bold hover:underline"
+        >
+          Experience
+        </Link>
+        <Link
+          to="/projects"
+          className="text-lg text-white hover:text-xl hover:font-bold hover:underline"
+        >
+          Projects
+        </Link>
+        <Link
+          to="/contact"
+          className="text-lg text-white hover:text-xl hover:font-bold hover:underline"
+        >
+          Contact
+        </Link>
+      </div>
+
+      {/* Sidebar menu for small screens */}
       <div
         className={`fixed top-0 right-0 h-screen w-64 bg-neutral-950 text-white shadow-2xl transform transition-transform duration-300 ${
           isOpen ? "translate-x-0" : "translate-x-full"
