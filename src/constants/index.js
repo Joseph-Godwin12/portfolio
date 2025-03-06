@@ -22,32 +22,36 @@ export const EXPERIENCES = [
 
 export const PROJECTS = [
   {
-    img: colorGuess,
-    title: "Color Guessing Game",
-    description:
-      "A fully functional e-commerce website with features like product listing, shopping cart, and user authentication.",
-    technologies: ["HTML", "CSS", "React", "Node.js", "MongoDB"],
-  },
-  {
-    img: textProcessor,
     title: "Text Processor",
+    img: textProcessor,
     description:
-      "An application for managing tasks and projects, with features such as task creation, assignment, and progress tracking.",
-    technologies: ["HTML", "CSS", "Angular", "Firebase"],
+      "A tool that translates text from one language to another, providing accurate and fast translations for various languages.",
+    technologies: ["HTML", "CSS", "React", "Tailwind"],
+    link: "https://text-processor-chi.vercel.app",
   },
   {
-    img: ticketGenerator,
+    title: "Colour Guessing Game",
+    img: colorGuess,
+    description:
+      "A fun and interactive game where users guess the color based on the given RGB values. It helps in learning and understanding color theory.",
+    technologies: ["HTML", "CSS", "React", "Tailwind"],
+    link: "https://color-guess-game-six.vercel.app",
+  },
+  {
     title: "Ticket Generator",
+    img: ticketGenerator,
     description:
-      "A personal portfolio website showcasing projects, skills, and contact information.",
-    technologies: ["HTML", "CSS", "React", "Bootstrap"],
+      "A tool designed to generate tickets for events, support, or any other purpose. It includes features like ticket creation, customization, and management.",
+    technologies: ["HTML", "CSS", "React", "Tailwind"],
+    link: " https://ticket-generator-steel.vercel.app",
   },
   {
-    img: todoList,
     title: "Todo List App",
+    img: todoList,
     description:
-      "A platform for creating and publishing blog posts, with features like rich text editing, commenting, and user profiles.",
-    technologies: ["HTML", "CSS", "Vue.js", "Express", "mySQL"],
+      "A simple and efficient todo list application that allows users to add, edit, and delete tasks. It saves tasks to local storage, ensuring data persistence across sessions.",
+    technologies: ["HTML", "CSS", "Javascript"],
+    link: "https://to-do-list-seven-nu-96.vercel.app",
   },
 ];
 
