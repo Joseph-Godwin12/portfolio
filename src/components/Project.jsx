@@ -5,6 +5,7 @@ export default function Project() {
     <div className="flex flex-col items-center justify-center p-4">
       <h1 className="my-10 text-center text-white text-4xl">Projects</h1>
       <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-2 gap-8">
+        
         {PROJECTS.map((project) => (
           <div
             key={project.title}
