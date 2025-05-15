@@ -27,9 +27,9 @@ export default function Home() {
                 </div>
                 <div className="md:w-1/2 flex flex-col items-center md:items-start md:pl-0 text-center md:text-left"> 
                     <motion.h1 
-                   variants={container(0)}
-                   initial="hidden"
-                   animate="visible"
+                    variants={container(0)}
+                    initial="hidden"
+                    animate="visible"
                     className="text-4xl text-neutral-500 md:text-4xl">
                         Egbucha Joseph
                     </motion.h1>

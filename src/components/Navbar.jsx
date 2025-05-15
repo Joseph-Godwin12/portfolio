@@ -52,27 +52,27 @@ export default function Navbar() {
 
       {/* Desktop navbar links (visible on large screens) */}
       <div className="hidden lg:flex space-x-10">
-        <Link to="/" className="text-lg text-white hover:text-xl hover:font-bold hover:underline">
+        <Link to="/" className="text-lg text-white hover:font-bold hover:underline">
           Home
         </Link>
-        <Link to="/about" className="text-lg text-white hover:text-xl hover:font-bold hover:underline">
+        <Link to="/about" className="text-lg text-white hover:font-bold  hover:underline">
           About
         </Link>
         <Link
           to="/experience"
-          className="text-lg text-white hover:text-xl hover:font-bold hover:underline"
+          className="text-lg text-white hover:font-bold hover:underline"
         >
           Experience
         </Link>
         <Link
           to="/projects"
-          className="text-lg text-white hover:text-xl hover:font-bold hover:underline"
+          className="text-lg text-white hover:font-bold hover:underline"
         >
           Projects
         </Link>
         <Link
           to="/contact"
-          className="text-lg text-white hover:text-xl hover:font-bold hover:underline"
+          className="text-lg text-white hover:font-bold hover:underline"
         >
           Contact
         </Link>
