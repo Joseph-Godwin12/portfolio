@@ -2,7 +2,8 @@ import colorGuess from "../assets/color-g.png"
 import textProcessor from "../assets/text-p.png"
 import ticketGenerator from "../assets/ticket-g.png"
 import todoList from "../assets/Todo-list.png"
-import quotes from "../assets/quotes.png"
+import movie from "../assets/movie.png"
+import quiz from "../assets/quiz.png"
 
 export const ABOUT_TEXT = `I am a dedicated  frontend  developer with a passion for creating efficient and user-friendly web applications. I enjoy transforming ideas into reality using HTML, CSS, JavaScript, and frameworks like React.js, and Tailwindcss.  My journey in web development began with a deep curiosity for how things work, and it has evolved into a career where I continuously strive to learn and adapt to new challenges. I thrive in collaborative environments and enjoy solving complex problems to deliver high-quality solutions. I enjoy transforming ideas into reality using HTML, CSS, JavaScript, and frameworks like React.js. 
 My goal is to craft intuitive, visually appealing interfaces that engage users and provide seamless, functional experiences across devices.`;
@@ -19,6 +20,14 @@ export const EXPERIENCES = [
 ];
 
 export const PROJECTS = [
+  {
+    title: "Movie App",
+    img: movie,     
+    description:
+      "A web application that allows users to search for movies, view details, and get recommendations. It uses the TMDB API to fetch movie data and provides a user-friendly interface.",
+    technologies: ["HTML", "CSS", "React", "Tailwind"],
+    link: "https://movie-hub-nine-gamma.vercel.app/",
+  },
   {
     title: "Text Processor",
     img: textProcessor,
@@ -44,11 +53,11 @@ export const PROJECTS = [
     link: " https://ticket-generator-steel.vercel.app",
   },
   {
-    title: "Todo List App",
-    img: todoList,
+    title: "Quiz App",
+    img: quiz,
     description:
-      "A simple and efficient todo list application that allows users to add, edit, and delete tasks. It saves tasks to local storage, ensuring data persistence across sessions.",
-    technologies: ["HTML", "CSS", "Javascript"],
-    link: "https://to-do-list-seven-nu-96.vercel.app",
+      "The Tech Professions Quiz App is a responsive web application built with React and Tailwind CSS. It allows users to test their knowledge across various tech fields like frontend, backend, data science, and more. Each session presents 10 random questions from a curated set, with score tracking and smooth navigation.",
+    technologies: ["HTML", "CSS", "React", "Tailwind"],
+    link: "https://quiz-app-lake-two.vercel.app/",
   },
 ];
