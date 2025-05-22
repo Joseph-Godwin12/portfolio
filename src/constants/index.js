@@ -5,19 +5,18 @@ import todoList from "../assets/Todo-list.png"
 import movie from "../assets/movie.png"
 import quiz from "../assets/quiz.png"
 
-export const ABOUT_TEXT = `I am a dedicated  frontend  developer with a passion for creating efficient and user-friendly web applications. I enjoy transforming ideas into reality using HTML, CSS, JavaScript, and frameworks like React.js, and Tailwindcss.  My journey in web development began with a deep curiosity for how things work, and it has evolved into a career where I continuously strive to learn and adapt to new challenges. I thrive in collaborative environments and enjoy solving complex problems to deliver high-quality solutions. I enjoy transforming ideas into reality using HTML, CSS, JavaScript, and frameworks like React.js. 
-My goal is to craft intuitive, visually appealing interfaces that engage users and provide seamless, functional experiences across devices.`;
+export const ABOUT_TEXT = `I am a dedicated  frontend  developer with a passion for creating efficient and user-friendly web applications. I enjoy transforming ideas into reality using HTML, CSS, JavaScript, and frameworks like React.js, and Tailwindcss.  My journey in web development began with a deep curiosity for how things work, and it has evolved into a career where I continuously strive to learn and adapt to new challenges. I thrive in collaborative environments and enjoy solving complex problems to deliver high-quality solutions. My goal is to craft intuitive, visually appealing interfaces that engage users and provide seamless, functional experiences across devices.`;
 
 export const EXPERIENCES = [
   {
     year: "2024 - 2025",
     role: "Frontend Developer",
     company: "TechBubble",
-    description: `Developed user interfaces for web applications using React. Worked closely with backend developers to integrate frontend components with Node.js APIs. Implemented responsive designs and optimized frontend performance.`,
-    technologies: ["Javascript", "React", "Tailwind"],
+    description: `Developed user interfaces for web applications using React, including the implementation of a secure and responsive login page. Worked closely with backend developers to integrate frontend components with Node.js APIs. Implemented responsive designs, improved form validation, and optimized frontend performance.`,
+    technologies: ["JavaScript", "React", "Tailwind"],
   },
-  
 ];
+
 
 export const PROJECTS = [
   {
