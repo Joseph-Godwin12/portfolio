@@ -90,7 +90,7 @@ export default function Contact() {
         type="submit"
         whileHover={{ scale: 1.05 }}
         whileTap={{ scale: 0.95 }}
-        className="w-full py-2 px-4 rounded bg-gradient-to-r from-slate-500 to-purple-500 hover:bg-purple-700 text-white font-semibold transition duration-200"
+        className="w-full py-2 px-4 rounded bg-gradient-to-r from-slate-700 to-purple-900 hover:bg-purple-700 text-white font-semibold transition duration-200"
       >
         Send Message
       </motion.button>
