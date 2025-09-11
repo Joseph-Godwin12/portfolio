@@ -1,6 +1,6 @@
 import Joseph from "../assets/joseph.jpg"
 import { RiReactjsLine } from "react-icons/ri"
-import { SiTailwindcss, SiJavascript, SiHtml5, SiCss3 } from "react-icons/si"
+import { SiTailwindcss, SiJavascript, SiHtml5, SiCss3, SiTypescript, SiGithub } from "react-icons/si"
 import { motion } from "framer-motion"
 import { ABOUT_TEXT } from "../constants"
 
@@ -92,7 +92,9 @@ export default function About() {
                             { icon: <SiCss3 className="text-blue-600" />, duration: 2.5 },
                             { icon: <SiJavascript className="text-yellow-400" />, duration: 3 },
                             { icon: <RiReactjsLine className="text-cyan-400" />, duration: 3.5 },
-                            { icon: <SiTailwindcss className="text-teal-400" />, duration: 4 }
+                            { icon: <SiTailwindcss className="text-teal-400" />, duration: 4 },
+                            { icon: <SiTypescript className="text-blue-400" />, duration: 4.5 },
+                            { icon: <SiGithub className="text-gray-100" />, duration: 5 },
                         ].map(({ icon, duration }, i) => (
                             <motion.div
                                 key={i}

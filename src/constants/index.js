@@ -1,7 +1,7 @@
 import colorGuess from "../assets/color-g.png"
 import textProcessor from "../assets/text-p.png"
 import ticketGenerator from "../assets/ticket-g.png"
-import todoList from "../assets/Todo-list.png"
+import neomart from "../assets/neo.png"
 import movie from "../assets/movie.png"
 import quiz from "../assets/quiz.png"
 
@@ -19,6 +19,15 @@ export const EXPERIENCES = [
 
 
 export const PROJECTS = [
+  {
+    title: "E-commerce Website",
+    img: neomart,
+    description:
+      "A modern e-commerce website built with React and Tailwind CSS. It features a responsive design, product listings, a shopping cart, and a checkout process. The site is optimized for performance and provides a seamless user experience across devices.",
+    technologies: ["HTML", "CSS", "React", "Tailwind"],
+    link: "https://neomart-mu.vercel.app/",
+
+  },
   {
     title: "Movie App",
     img: movie,     
