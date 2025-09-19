@@ -76,7 +76,7 @@ export default function Home() {
                         variants={container(2)}
                         initial="hidden"
                         animate="visible"
-                        href="Joseph (1).pdf"
+                        href="Joseph (2).pdf"
                         target="_blank"
                         rel="noopener noreferrer"
                         className="mt-6 inline-block bg-gradient-to-r from-slate-700 to-purple-500 text-white px-6 py-2 rounded hover:font-semibold transition duration-200"
