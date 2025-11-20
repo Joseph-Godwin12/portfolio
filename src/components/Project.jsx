@@ -13,7 +13,8 @@ export default function Project() {
         Projects
       </motion.h1>
 
-      <div className="flex flex-col gap-8 w-full max-w-6xl">
+      {/* Grid container for two columns */}
+      <div className="grid grid-cols-1 md:grid-cols-2 gap-8 w-full max-w-6xl">
         {PROJECTS.map((project, index) => (
           <motion.div
             key={project.title}
@@ -21,53 +22,72 @@ export default function Project() {
             whileInView={{ opacity: 1, y: 0 }}
             transition={{ duration: 0.8, delay: index * 0.2 }}
             viewport={{ once: true }}
-            className="flex flex-col md:flex-row items-center p-6 rounded-lg shadow-lg lg:gap-32"
+            className="flex flex-col items-center p-6 rounded-lg shadow-lg"
           >
-            {/* Image with slide-left */}
+            {/* Image on top */}
             <motion.img
               src={project.img}
               alt={project.title || "Project image"}
-              width={150}
+              width={200}
               height={150}
-              initial={{ x: -100, opacity: 0 }}
-              whileInView={{ x: 0, opacity: 1 }}
+              initial={{ y: -50, opacity: 0 }}
+              whileInView={{ y: 0, opacity: 1 }}
               transition={{ duration: 0.8, delay: index * 0.3 }}
               viewport={{ once: true }}
-              className="w-40 h-40 object-cover rounded-md mb-4 md:mb-0 md:mr-4"
+              className="w-full h-40 object-cover rounded-md mb-4"
             />
 
-            {/* Text content with slide-right */}
+            {/* Text content below */}
             <motion.div
-              initial={{ x: 100, opacity: 0 }}
-              whileInView={{ x: 0, opacity: 1 }}
+              initial={{ y: 50, opacity: 0 }}
+              whileInView={{ y: 0, opacity: 1 }}
               transition={{ duration: 0.8, delay: index * 0.4 }}
               viewport={{ once: true }}
-              className="w-full text-center md:text-left"
+              className="w-full text-center"
             >
               <h6 className="mb-2 text-gray-300 font-semibold text-xl">{project.title}</h6>
               <p className="mb-4 text-gray-400 text-balance">{project.description}</p>
-              <div className="flex flex-wrap justify-center md:justify-start gap-2 mb-4">
+              <div className="flex flex-wrap justify-center gap-2 mb-4">
                 {project.technologies.map((tech) => (
                   <span
                     key={tech}
-                    className="rounded bg-neutral-800 px-3 py-1 font-medium text-purple-500"
+                    className="rounded bg-neutral-800 px-3 py-1 font-medium text-gray-400"
                   >
                     {tech}
                   </span>
                 ))}
               </div>
-              <a
-                href={project.link}
-                target="_blank"
-                rel="noopener noreferrer"
-                className="text-blue-500 hover:underline"
-              >
-                View Project
-              </a>
+              <div className="flex justify-center gap-4">
+                <a
+                  href={project.link}
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="text-blue-500 hover:underline"
+                >
+                  View Project
+                </a>
+                <a
+                  href={project.githubLink}
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="text-blue-500 hover:underline"
+                >
+                  Github Link
+                </a>
+              </div>
             </motion.div>
           </motion.div>
         ))}
       </div>
+
+      <a
+        href="https://github.com/Joseph-Godwin12?tab=repositories"
+        target="_blank"
+        rel="noopener noreferrer"
+        className="bg-blue-500 p-4 m-2 rounded-md text-gray-200 hover:text-lg"
+      >
+        View more
+      </a>
     </div>
   );
 }
